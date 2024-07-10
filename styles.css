@@ -120,4 +120,13 @@ body {
 .player2Name {
   justify-content: center;
   align-self: center;
+  color: white;
+}
+.p1Score,
+.p2Score {
+  color: white;
+}
+.current-player-info {
+  font-size: 30px;
+  color: #2c60c6;
 }

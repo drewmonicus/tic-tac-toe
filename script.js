@@ -67,9 +67,11 @@ const initGame = (() => {
     const nameMark = document.createElement("div");
     nameMark.classList.add("current-player-info");
     if (player.name === "") {
-      nameMark.innerHTML = `${player.mark}'s Turn (${player.mark})`;
+      nameMark.innerHTML = `${player.mark}'s turn (${player.mark})`;
     } else {
-      nameMark.innerHTML = `${player.name}'s Turn (${player.mark})`;
+      nameMark.innerHTML = `${player.name.toUpperCase()}'s turn (${
+        player.mark
+      })`;
     }
     gameScreen.prepend(nameMark);
   };
