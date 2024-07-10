@@ -1,1 +1,1 @@
-# [Tic Tac Toe](https://drewmonicus.github.io/Admin-Dashboard/)
+# [Tic Tac Toe](https://drewmonicus.github.io/tic-tac-toe/)
