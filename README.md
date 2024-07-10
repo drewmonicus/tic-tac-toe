@@ -1,2 +1,1 @@
-# tic-tac-toe
-Create tic tac toe game using objects and iife's.
+# [Tic Tac Toe]( https://drewmonicus.github.io/weather-api-project/)
