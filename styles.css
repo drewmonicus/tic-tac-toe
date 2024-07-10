@@ -1,0 +1,123 @@
+@import url("https://fonts.cdnfonts.com/css/callie-chalk-font");
+* {
+  font-family: "Callie Chalk Font", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+html {
+  min-height: 100vh;
+}
+body {
+  display: flex;
+  background-image: url("./Plain\ Chalkboard\ Background.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: 100% 100%;
+}
+
+/* TitleScreen */
+
+.title-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-screen svg {
+  height: 25px;
+  width: px;
+}
+
+.play-btn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+  border-radius: 5px;
+  height: 50px;
+  width: 150px;
+  border-color: rgb(119, 136, 153);
+  color: rgb(119, 136, 153);
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+.title-screen h1 {
+  color: #2c60c6;
+  font-size: 100px;
+  margin: 0px;
+}
+
+.title-screen h4 {
+  color: #72a0c1;
+  font-size: 50px;
+  margin: 10px;
+}
+
+.title-btn div {
+  font-size: 20px;
+}
+
+.player-input {
+  padding-bottom: 10px;
+}
+
+#player1,
+#player2 {
+  width: 150px;
+  height: 25px;
+}
+
+/* Game Screen*/
+
+.game-screen {
+  width: 100%;
+  height: 100vh;
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-board {
+  height: 500px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.right-border {
+  border-right: 2px solid white;
+}
+
+.bottom-border {
+  border-bottom: 2px solid white;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+}
+
+.current-player-info {
+  position: absolute;
+  top: 10vh;
+}
+
+.playerCard {
+  display: flex;
+  flex-direction: column;
+}
+.player1Name,
+.player2Name {
+  justify-content: center;
+  align-self: center;
+}

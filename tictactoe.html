@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="title-screen">
+      <h1>Tic-Tac-Toe</h1>
+      <h4>Play:</h4>
+      <div class="player-input">
+        <input type="text" id="player1" placeholder="Player 1 Name" />
+        <input type="text" id="player2" placeholder="Player 2 Name" />
+      </div>
+      <button class="play-btn">
+        <div>VS Player</div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <title>play</title>
+          <path d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+        </svg>
+      </button>
+    </div>
+    <div class="game-screen" style="display: none">
+      <div class="current-player-info"></div>
+      <div class="playerCard player1">
+        <h1 class="p1Score">Score:</h1>
+      </div>
+      <div id="game-board">
+        <!-- 3x3 Grid -->
+        <div data-cell="1" class="square bottom-border right-border"></div>
+        <div data-cell="2" class="square bottom-border right-border"></div>
+        <div data-cell="3" class="square bottom-border"></div>
+        <div data-cell="4" class="square bottom-border right-border"></div>
+        <div data-cell="5" class="square bottom-border right-border"></div>
+        <div data-cell="6" class="square bottom-border"></div>
+        <div data-cell="7" class="square right-border"></div>
+        <div data-cell="8" class="square right-border"></div>
+        <div data-cell="9" class="square"></div>
+      </div>
+      <div class="playerCard player2">
+        <h1 class="p2Score">Score:</h1>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
